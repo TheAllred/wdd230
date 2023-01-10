@@ -1,0 +1,95 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219 138 103);
+    margin: 0;
+}
+
+header{
+    background-color: rgba(240, 248, 255, 0.861);
+    height: 50px;
+    border-bottom : solid 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 3vw;
+}
+
+h1{
+    font-size: min(8vw,70px);
+    
+}
+h2{
+    font-size: min(6vw, 50px);
+}
+footer{
+
+text-align: center;
+}
+
+
+.parallax-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parallax {
+    /* From w3schools */
+    /* The image used */
+    background-image: url("../images/TrainTracks.jpg");
+    /* Full height */
+    height: 100%;
+    width:100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.selfie{
+height: 30vw;
+max-height: 275px;
+border-radius: 15px;
+border: 2px solid;
+margin: 1rem;
+}
+
+.profile{   
+ justify-content: space-between !important;
+}
+
+.panel{
+   text-align: center;
+    background-color: rgba(255, 255, 255, 0.364);
+    padding: 5vw;
+    backdrop-filter: blur(5px); 
+    border-radius: 15px;
+    border: 3px solid; 
+
+}
+.centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content{
+    max-width: 80%;
+    margin: 0 auto;
+}
