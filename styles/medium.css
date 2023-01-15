@@ -1,0 +1,15 @@
+@media screen and (min-width: 640px) {
+    .panel {
+display: flex;
+
+background-color: rgba(255, 255, 255, 0.364);
+    }
+    header{
+        display: block;
+    }
+    .centered{
+        display: flex;
+    }
+    
+}
+

@@ -1,0 +1,24 @@
+@media only screen and (min-width: 600px){
+    body {
+        /* background-color: black; */
+        grid-template-areas: "h h"
+        "a b"
+        "c c";
+    }
+
+    #a{
+    grid-area: a;
+    }
+
+    #b{
+    grid-area: b;
+    }
+
+    #c{
+    grid-area: c;
+    }
+
+    .panel{
+            max-width: 45vw;
+    }
+}
