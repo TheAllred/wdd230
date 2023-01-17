@@ -45,6 +45,9 @@ p{
     overflow: hidden;
     
 }
+.panel p{
+    padding: 2vw;
+}
 .panelHeading{
     margin: 0;
     background-color: lightgrey;
