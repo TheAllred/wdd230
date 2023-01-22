@@ -1,0 +1,7 @@
+@media (min-width: 400px) {
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+}
