@@ -1,0 +1,12 @@
+@media (min-width: 800px) {
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #hamburger-button{
+        display: none;
+    }
+
+    
+}

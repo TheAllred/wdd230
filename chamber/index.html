@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mock Home page for the Rexburg Chamber of Comerece by Kevin Allred for WDD230"
+    />
+    <title>Rexburg Chamber of Comerece</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-box">
+        <img
+          src="./images/RexCC-removebg-preview.png"
+          alt="Rexburg Icon"
+          class="icon"
+        />
+        <h1>Rexburg Chamber of Comerece</h1>
+        <button id="hamburger-button">
+          <span id="burger-open">≡</span>
+          <span id="burger-close">X</span>
+        </button>
+      </div>
+      <div class="header-box">
+        <span id="today"></span>
+        <a href=""><img src="./images/f_logo_RGB-Black_100.png" alt="" /></a>
+        <a href=""
+          ><img src="./images/P-Badge-Cosmicore-Black-900.svg" alt=""
+        /></a>
+      </div>
+
+      <nav>
+        <a href="./index.html" class="active">Home</a>
+        <a href="./audience.html">Target Audience</a>
+        <a href="./design.html">Design</a>
+      </nav>
+    </header>
+    <main>
+      <section class="panel" id="hero">
+        <p>Hero</p>
+      </section>
+      <section class="panel" id="event"><p>event</p></section>
+      <section class="panel" id="weather"><p>weather</p></section>
+      <section class="panel" id="news"><p>news</p></section>
+      <section class="panel" id="spotlight">
+        <div class="panel"></div>
+        <div class="panel"></div>
+      </section>
+    </main>
+    <footer>
+      <img src="./images/RexCC-removebg-preview.png" alt="logo" class="icon" />
+
+      <p>&copy; <span id="copyyear"></span> | Kevin Allred | Rexburg, ID|</p>
+      <a href="https://goo.gl/maps/f5VcGpbPFv3w4bsv8">Maps</a>
+      <p>Last updated: <span id="lastmodified"></span></p>
+    </footer>
+  </body>
+</html>
+<script src="./scripts/site.js"></script>

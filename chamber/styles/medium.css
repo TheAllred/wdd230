@@ -1,0 +1,35 @@
+@media (min-width: 400px) {
+    main{
+        display: grid;
+        grid-template-areas: 
+        "a a"
+        "b b"
+        "c c"
+        "d e"
+        
+        
+        ;
+    }
+    .panel{
+
+    }
+    #hero{
+        grid-area: "a";
+        
+    }
+
+    #news{
+        grid-area: "b";
+
+    }
+    #spotlight{
+        grid-area: "c";
+    }
+    #event{
+        grid-area: "d";
+    }
+    #weather{
+        grid-area: "e";
+    }
+    
+}

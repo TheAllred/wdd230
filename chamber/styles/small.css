@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+
+}
+body p {
+    text-align: left;
+}
+
+
+
+nav{
+    border: solid 2px black;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    background-color: lightsteelblue;
+    
+}
+nav a {
+    border: solid 2px black;
+    padding: 1vw;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    background-color: steelblue;
+}
+
+nav.menu-active{
+    display: flex;
+}
+#hamburger-button{
+border: solid 2px black;
+border-radius: 5px;
+background-color: lightsteelblue;
+}
+#burger-open{
+    font-size: 1.1rem;
+}
+#burger-open.menu-active{
+    display: none;
+}
+#burger-close{
+    display: none;
+}
+#burger-close.menu-active{
+    display: inline;
+}
+
+.active{
+    background-color: steelblue;
+}
+.icon{
+    width: 30vw;
+}
+.header-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-box a img{
+    max-width: 5vw;
+}
+
+header h1{
+    font-size: 1.5rem;
+}
+main{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.panel{
+    margin: 1vh;
+ 
+    border: solid 3px black;
+    border-radius: 10px;
+    box-shadow: 5px 3px 10px black;
+}
+
+
+footer{
+    color:white;
+    background-color: steelblue;
+    margin: 0;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
