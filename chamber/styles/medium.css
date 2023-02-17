@@ -7,6 +7,7 @@
         grid-template-areas: 
         "a a"
         "b b"
+        "f f"
         "c c"
         "d e"
         
@@ -25,12 +26,17 @@
     }
     #spotlight{
         grid-area: c;
+        
     }
     #event{
         grid-area: d;
     }
     #weather{
         grid-area: e;
+    }
+    #join{
+        grid-area: f;
+        display: block;
     }
     
 }

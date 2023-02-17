@@ -8,5 +8,38 @@
         display: none;
     }
 
+    main{
+        display: grid;
+        grid-template-areas: 
+        "d a a c"
+        "e a a c"
+        "f b b c"
+        ;
+gap: 2vw;
+    }
+
+    #hero{
+        grid-area: a;
+        
+    }
+
+    #news{
+        grid-area: b;
+
+    }
+    #spotlight{
+        grid-area: c;
+        max-height: none;
+    }
+    #event{
+        grid-area: d;
+    }
+    #weather{
+        grid-area: e;
+    }
+    #join{
+        grid-area: f;
+    }
+
     
 }
