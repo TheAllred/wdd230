@@ -9,7 +9,9 @@ body{
 body p {
     text-align: left;
 }
-
+.hidden{
+    display: none;
+}
 
 
 nav{
@@ -93,6 +95,10 @@ flex-direction: column;
     color: white;
     background-color: rgba(0, 0, 0, 0.552);
 }
+.call button{
+    margin-top: 5vh;
+}
+
 
 .panel{
     margin: 1vh;
@@ -104,7 +110,7 @@ flex-direction: column;
 }
 .panel img{
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
     overflow: hidden;
 }
 .panel h3{
@@ -124,6 +130,17 @@ flex-direction: column;
     background-color: rgba(255, 255, 255, 0.619);
     border: solid 1px black;
     border-radius: 5px;
+    margin-top: 5vh;
+}
+.panel button{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 255, 0.619);
+    border: solid 1px black;
+    border-radius: 5px;
+
 }
 .panel ul li{
     border: solid black 1px;

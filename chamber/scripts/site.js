@@ -1,5 +1,8 @@
 //sets the year for footer
 let today = new Date();
+if (today.getDay() === 2) {
+  document.querySelector("#meet-greet").classList.toggle("hidden");
+}
 
 document.querySelector("#copyyear").textContent = today.getFullYear();
 
