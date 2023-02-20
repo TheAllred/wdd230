@@ -39,6 +39,7 @@ p{
 .panel{
     margin: 5vw;
     border: solid black 2px;
+   
 }
 .panel img{
     width: 90%;
@@ -49,6 +50,7 @@ p{
     padding: 2vw;
 }
 .panelHeading{
+    padding: 2vw;
     margin: 0;
     background-color: lightgrey;
 }
