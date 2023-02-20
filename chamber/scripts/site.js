@@ -1,8 +1,25 @@
 //sets the year for footer
 let today = new Date();
+const MILLIS_PER_DAY = 24 * 60 * 60 * 1000;
+let lastVisit = localStorage.getItem("lastVisit");
+let lastVisitSpan = document.querySelector("#last-visit");
+
+// Display banner for meet and greet on tuesdays.
 if (today.getDay() === 2) {
   document.querySelector("#meet-greet").classList.toggle("hidden");
 }
+
+if (!lastVisit) {
+  localStorage.setItem("lastVisit", today);
+  lastVisitSpan.textContent = "0";
+} else {
+  let lastVisitDate = new Date(lastVisit);
+  let daysSinceLastVisit = Math.floor(
+    (today.getTime() - lastVisitDate.getTime()) / MILLIS_PER_DAY
+  );
+  lastVisitSpan.textContent = daysSinceLastVisit.toString();
+}
+localStorage.setItem("lastVisit", today);
 
 document.querySelector("#copyyear").textContent = today.getFullYear();
 
