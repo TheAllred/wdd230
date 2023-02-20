@@ -38,5 +38,11 @@
         grid-area: f;
         display: block;
     }
-    
+    .discover-img{
+        transition: all 0.2s;
+    }
+    .discover-img:hover{
+        transform: translateY(1vw);
+
+    }
 }
