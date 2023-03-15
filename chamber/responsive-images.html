@@ -23,7 +23,11 @@
         🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
       </div>
       <div class="header-box">
-        <div class="icon"></div>
+        <img
+          src="./images/Rex_chamber_logo-removebg-preview.webp"
+          alt="Rexburg Icon"
+          class="icon"
+        />
         <h1>Rexburg Chamber of Comerece</h1>
         <button id="hamburger-button">
           <span id="burger-open">≡</span>
@@ -46,6 +50,20 @@
     </header>
     <main>
       <section class="panel" id="hero">
+        <picture>
+          <source
+            srcset="./images/wdd230-org-400.jpg"
+            media="(max-width:400px)"
+          />
+          <source
+            srcset="./images/wdd230-org-800.jpg"
+            media="(max-width:800px)"
+          />
+          <source
+            srcset="./images/wdd230-org-1200.jpg"
+            media="(max-width:1200px)"
+          />
+          <img src="./images/wdd230-org-1200.jpg" alt="Hero image" />
         </picture>
 
         <div class="call">
@@ -54,6 +72,10 @@
         </div>
       </section>
       <section class="panel" id="event">
+        <img
+          src="https://images.pexels.com/photos/325521/pexels-photo-325521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="people sitting on lawn"
+        />
         <h3>Events!</h3>
         <p>
           Here in Rexburg there is a variety of events and activities. Click
@@ -63,6 +85,8 @@
       <section class="panel" id="weather">
         <h2>Weather</h2>
         <div id="weather-temp"></div>
+        <div id="weather-windSpeed"></div>
+        <div id="weather-windChill"></div>
       </section>
       <section class="panel" id="news">
         <h2>News:</h2>
@@ -75,26 +99,45 @@
         </ul>
       </section>
       <section class="panel" id="spotlight">
-        <div class="panel" id="water-tower">
-          <h3>Water Tower Celebrates 50th anniversary.</h3>
+        <div class="panel">
+          <img
+            src="https://images.pexels.com/photos/260447/pexels-photo-260447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="gym"
+          />
+          <h3>New gym opens in Rexburg</h3>
+          <p>Buff Guys Gym 2nd S 1st W</p>
         </div>
-        <div class="panel" id="night-lights">
-          <h3>Temple lights visible for miles.</h3>
+        <div class="panel">
+          <img
+            src="https://images.pexels.com/photos/947173/pexels-photo-947173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="gym"
+          />
+          <h3>Cupcake Shop Opens!</h3>
+          <p>25 S 4th W</p>
         </div>
-        <div class="panel" id="tabernacle">
-         
-          <h3>Tabernacle to host Choir.</h3>
+        <div class="panel">
+          <img
+            src="https://images.pexels.com/photos/2253643/pexels-photo-2253643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="restaurant"
+          />
+          <h3>Cafe open till dinner!</h3>
+          <p>45 S 7th W</p>
         </div>
       </section>
       <section id="join">
-        <div class="panel" id="join-panel">
+        <div class="panel">
+          <img src="https://picsum.photos/id/277/200/" alt="grassy field" />
           <h3>Join the Chamber!</h3>
           <button>Learn more</button>
         </div>
       </section>
     </main>
     <footer>
-      <div class="icon"></div>
+      <img
+        src="./images/Rex_chamber_logo-removebg-preview.webp"
+        alt="logo"
+        class="icon"
+      />
 
       <p>&copy; <span id="copyyear"></span> | Kevin Allred | Rexburg, ID|</p>
       <a href="https://goo.gl/maps/f5VcGpbPFv3w4bsv8">Maps</a>
@@ -106,4 +149,5 @@
     </footer>
   </body>
 </html>
+<script src="./scripts/windchill.js"></script>
 <script src="./scripts/site.js"></script>

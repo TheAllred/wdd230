@@ -4,15 +4,19 @@
         align-items: unset;
         justify-content: unset;
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         grid-template-areas: 
         "a a"
         "b b"
         "f f"
         "c c"
-        "d e"
-        
-        
-        ;
+        "d e";
+        gap: 2vw;
+    }
+    .panel{
+    width: 100%;
+    height: 100%;
     }
 
     #hero{
@@ -26,6 +30,7 @@
     }
     #spotlight{
         grid-area: c;
+        max-height: none;
         
     }
     #event{
