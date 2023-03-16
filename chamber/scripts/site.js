@@ -23,6 +23,12 @@ localStorage.setItem("lastVisit", today);
 
 document.querySelector("#copyyear").textContent = today.getFullYear();
 
+let formLoadedAt = document.getElementById("form-loaded-at");
+
+if (formLoadedAt) {
+  formLoadedAt.value = today.toISOString();
+}
+
 const options = {
   weekday: "long",
   year: "numeric",

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mock join page for the Rexburg Chamber of Comerece by Kevin Allred for WDD230"
+    />
+    <title>Join the Chamber</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+  </head>
+  <body>
+    <header>
+      <div class="banner hidden" id="meet-greet">
+        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+      </div>
+      <div class="header-box">
+        <div class="icon"></div>
+        <h1>Rexburg Chamber of Comerece</h1>
+        <button id="hamburger-button">
+          <span id="burger-open">≡</span>
+          <span id="burger-close">X</span>
+        </button>
+      </div>
+      <div class="header-box">
+        <span id="today"></span>
+        <a href=""><img src="./images/f_logo_RGB-Black_100.png" alt="" /></a>
+        <a href=""
+          ><img src="./images/P-Badge-Cosmicore-Black-900.svg" alt=""
+        /></a>
+      </div>
+
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./discover.html">Discover</a>
+        <a href="./join.html" class="active">Join</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Membership Form</h1>
+      <form action="thankyou.html" method="get">
+        <label for="first-name">First Name *</label>
+        <input type="text" id="first-name" name="first-name" required /><br />
+
+        <label for="last-name">Last Name *</label>
+        <input type="text" id="last-name" name="last-name" required /><br />
+
+        <label for="position">Business Position Title</label>
+        <input
+          type="text"
+          id="position"
+          name="position"
+          pattern="[A-Za-z\s-]{7,}"
+        /><br />
+
+        <label for="email">Email *</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@example.com"
+          required
+        /><br />
+
+        <label for="phone">Cell Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required /><br />
+
+        <label for="business-name">Business Name/Title *</label>
+        <input
+          type="text"
+          id="business-name"
+          name="business-name"
+          required
+        /><br />
+
+        <label for="membership-level">Membership Level *</label>
+        <select id="membership-level" name="membership-level" required>
+          <option value="">--Select Membership Level--</option>
+          <option value="NP Membership">NP Membership</option>
+          <option value="Bronze Membership">Bronze Membership</option>
+          <option value="Silver Membership">Silver Membership</option>
+          <option value="Gold Membership">Gold Membership</option></select
+        ><br />
+
+        <p>Membership Benefits:</p>
+        <ul>
+          <li>NP Membership: No fee</li>
+          <li>Bronze Membership: Increased benefits</li>
+          <li>Silver Membership: Even more benefits</li>
+          <li>Gold Membership: The most benefits</li>
+        </ul>
+        <br />
+
+        <label for="business-description">Business Description</label>
+        <textarea
+          id="business-description"
+          name="business-description"
+        ></textarea
+        ><br />
+
+        <input type="hidden" id="form-loaded-at" name="form-loaded-at" /><br />
+
+        <input type="submit" value="Submit Form" />
+      </form>
+    </main>
+    <footer>
+      <div class="icon"></div>
+
+      <p>&copy; <span id="copyyear"></span> | Kevin Allred | Rexburg, ID|</p>
+      <a href="https://goo.gl/maps/f5VcGpbPFv3w4bsv8">Maps</a>
+      <p>Last updated: <span id="lastmodified"></span></p>
+      <p>Contact: <a href="mailto:rex@burg.com">rex@burg.com</a></p>
+      <p>
+        It has been <span id="last-visit"></span> days since your last visit
+      </p>
+    </footer>
+  </body>
+</html>
+<script src="./scripts/site.js"></script>
