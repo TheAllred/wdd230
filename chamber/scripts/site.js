@@ -56,7 +56,9 @@ document
 
 async function displayDirectory() {
   // Retrieve the JSON data
-  const response = await fetch("../data/directory.json");
+  const response = await fetch(
+    "https://theallred.github.io/wdd230/chamber/data/directory.json"
+  );
 
   // Check if the response is ok
   if (!response.ok) {
