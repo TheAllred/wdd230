@@ -9,6 +9,7 @@
       content="Mock Home page for the Rexburg Chamber of Comerece by Kevin Allred for WDD230"
     />
     <title>Rexburg Chamber of Comerece</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="./styles/small.css" />
     <link rel="stylesheet" href="./styles/medium.css" />
     <link rel="stylesheet" href="./styles/large.css" />
+    <link rel="stylesheet" href="./styles/directory.css" />
   </head>
   <body>
     <header>
@@ -23,7 +25,11 @@
         🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
       </div>
       <div class="header-box">
-        <div class="icon"></div>
+        <img
+          src="./images/Rex_chamber_logo-removebg-preview.webp"
+          alt="Rexburg Icon"
+          class="icon"
+        />
         <h1>Rexburg Chamber of Comerece</h1>
         <button id="hamburger-button">
           <span id="burger-open">≡</span>
@@ -37,66 +43,27 @@
           ><img src="./images/P-Badge-Cosmicore-Black-900.svg" alt=""
         /></a>
       </div>
-
       <nav>
-        <a href="./index.html" class="active" >Home</a>
+        <a href="./index.html">Home</a>
         <a href="./discover.html">Discover</a>
-        <a href="./join.html" >Join</a>
-        <a href="./directory.html" >Directory</a>
+        <a href="./join.html">Join</a>
+        <a href="./directory.html" class="active">Directory</a>
       </nav>
     </header>
     <main>
-      <section class="panel" id="hero">
-        </picture>
+      <select id="view-toggle">
+        <option value="grid">Grid View</option>
+        <option value="list">List View</option>
+      </select>
 
-        <div class="call">
-          <h1>Come visit Rexburg</h1>
-          <button>Learn More</button>
-        </div>
-      </section>
-      <section class="panel" id="event">
-        <h3>Events!</h3>
-        <p>
-          Here in Rexburg there is a variety of events and activities. Click
-          here to learn more!
-        </p>
-      </section>
-      <section class="panel" id="weather">
-        <h2>Weather</h2>
-        <div id="weather-temp"></div>
-      </section>
-      <section class="panel" id="news">
-        <h2>News:</h2>
-        <ul>
-          <li>Ribbon Cutting Ceremony!</li>
-          <li>New Library!</li>
-          <li>Car Theft Rampant!</li>
-          <li>Water Restrictions Increased</li>
-          <li>Puppet Becomes Real Boy!</li>
-        </ul>
-      </section>
-      <section class="panel" id="spotlight">
-        <div class="panel" id="water-tower">
-          <h3>Water Tower Celebrates 50th anniversary.</h3>
-        </div>
-        <div class="panel" id="night-lights">
-          <h3>Temple lights visible for miles.</h3>
-        </div>
-        <div class="panel" id="tabernacle">
-         
-          <h3>Tabernacle to host Choir.</h3>
-        </div>
-      </section>
-      <section id="join">
-        <div class="panel" id="join-panel">
-          <h3>Join the Chamber!</h3>
-          <button>Learn more</button>
-        </div>
-      </section>
+      <div id="directory"></div>
     </main>
     <footer>
-      <div class="icon"></div>
-
+      <img
+        src="./images/Rex_chamber_logo-removebg-preview.webp"
+        alt="logo"
+        class="icon"
+      />
       <p>&copy; <span id="copyyear"></span> | Kevin Allred | Rexburg, ID|</p>
       <a href="https://goo.gl/maps/f5VcGpbPFv3w4bsv8">Maps</a>
       <p>Last updated: <span id="lastmodified"></span></p>

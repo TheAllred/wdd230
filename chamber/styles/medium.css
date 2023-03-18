@@ -14,11 +14,7 @@
         "d e";
         gap: 2vw;
     }
-    .panel{
-    width: 100%;
-    height: 100%;
-    }
-
+    
     #hero{
         grid-area: a;
         

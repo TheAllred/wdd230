@@ -158,6 +158,7 @@ padding: 3vw;
     margin: 1vw;
     background-color: aliceblue;
 }
+
 #event{
     background-image: url("https://images.pexels.com/photos/325521/pexels-photo-325521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-size: cover;
@@ -271,3 +272,11 @@ form {
 		input[type="submit"]:hover {
 			background-color: black;
 		}
+
+
+.directory-panel p{
+    position: unset;
+    border: unset;
+    background-color: unset;
+    transform: unset;
+}

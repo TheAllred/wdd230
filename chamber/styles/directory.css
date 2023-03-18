@@ -1,0 +1,84 @@
+main{display: unset;}
+#directory{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.panel{min-height: unset;}
+
+select{
+    width: 90%;
+}
+
+.directory-panel{
+    width: calc(33.33% - 10px);
+  margin:5px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  border: 3px solid #000000;
+
+}
+
+.directory-panel:nth-child(even) {
+    background-color: #ddd;
+  }
+.gold-membership{
+    border: solid gold 4px;
+}
+
+
+.list .directory-panel {
+    display: table-row;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-radius: unset;
+  }
+  
+  .list .directory-panel > * {
+    display: table-cell;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: unset;
+
+  }
+  .list .directory-panel img{
+    display: none;
+  }
+
+@media (max-width: 768px) {
+    #directory {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .directory-panel {
+      width: calc(50% - 10px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .directory-panel {
+      width: 100%;
+      
+    }
+    .list .directory-panel {
+        display: block;
+        width: 100%;
+        border: solid black 2px;
+        padding: 0;
+        margin: 0;
+        border-radius: unset;
+      }
+      
+      .list .directory-panel > * {
+        display: block;
+        padding: 0;
+        margin: 0;
+        border: none;
+        border-radius: unset;
+    
+      }
+  }
