@@ -159,6 +159,16 @@ padding: 3vw;
     background-color: aliceblue;
 }
 
+#weather{
+    background-color: lightsteelblue;
+}
+#weather p{
+    background-color: unset;
+    border: none;
+    top: 75%;
+    margin: 3px;
+}
+
 #event{
     background-image: url("https://images.pexels.com/photos/325521/pexels-photo-325521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-size: cover;

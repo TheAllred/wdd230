@@ -104,13 +104,15 @@ const viewToggle = document.getElementById("view-toggle");
 const directory = document.getElementById("directory");
 
 // Add an event listener to the select element
-viewToggle.addEventListener("change", function () {
-  // Check the value of the select element
-  if (this.value === "list") {
-    // If the value is "list", add the "list" class to the directory element
-    directory.classList.add("list");
-  } else {
-    // Otherwise, remove the "list" class from the directory element
-    directory.classList.remove("list");
-  }
-});
+if (viewToggle) {
+  viewToggle.addEventListener("change", function () {
+    // Check the value of the select element
+    if (this.value === "list") {
+      // If the value is "list", add the "list" class to the directory element
+      directory.classList.add("list");
+    } else {
+      // Otherwise, remove the "list" class from the directory element
+      directory.classList.remove("list");
+    }
+  });
+}

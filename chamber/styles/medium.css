@@ -5,11 +5,12 @@
         justify-content: unset;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-template-areas: 
         "a a"
         "b b"
         "f f"
+        "c c"
         "c c"
         "d e";
         gap: 2vw;
