@@ -5,7 +5,7 @@
       "address": "Main Street, Rexburg, ID 83440",
       "phone": "(208) 555-1234",
       "website": "http://www.rexburgfarmersmarket.com",
-      "image": "chamber/images/farmers-market.jpeg",
+      "image": "./images/farmers-market.jpeg",
       "membership": "non-profit"
     },
     {
@@ -13,7 +13,7 @@
       "address": "72 W 1st S, Rexburg, ID 83440",
       "phone": "(208) 555-5678",
       "website": "http://www.cornerstonept.com",
-      "image": "chamber/images/physical-therapy.jpeg",
+      "image": "./images/physical-therapy.jpeg",
       "membership": "gold"
     },
     {
@@ -21,7 +21,7 @@
       "address": "190 S 1st E, Rexburg, ID 83440",
       "phone": "(208) 555-9012",
       "website": "http://www.theivyapartments.com",
-      "image": "chamber/images/apartments.jpeg",
+      "image": "./images/apartments.jpeg",
       "membership": "bronze"
     },
     {
@@ -29,7 +29,7 @@
       "address": "140 W 2nd N, Rexburg, ID 83440",
       "phone": "(208) 555-3456",
       "website": "http://www.familyeyecare.com",
-      "image": "chamber/images/eye-care.jpeg",
+      "image": "./images/eye-care.jpeg",
       "membership": "silver"
     },
     {
@@ -37,7 +37,7 @@
       "address": "6010 S 4300 W, Rexburg, ID 83440",
       "phone": "(208) 555-6789",
       "website": "http://www.yellowstonebearworld.com",
-      "image": "chamber/images/bear.jpeg",
+      "image": "./images/bear.jpeg",
       "membership": "gold"
     },
     {
@@ -45,7 +45,7 @@
       "address": "789 N 1st E, Rexburg, ID 83440",
       "phone": "(208) 555-2345",
       "website": "http://www.rustysputter.com",
-      "image": "chamber/images/golf.jpeg",
+      "image": "./images/golf.jpeg",
       "membership": "bronze"
     },
     {
@@ -53,7 +53,7 @@
       "address": "72 N 2nd E, Rexburg, ID 83440",
       "phone": "(208) 555-7890",
       "website": "http://www.broulims.com",
-      "image": "chamber/images/grocerys.jpeg",
+      "image": "./images/grocerys.jpeg",
       "membership": "non-profit"
     },
     {
@@ -61,7 +61,7 @@
       "address": "1178 University Blvd, Rexburg, ID 83440",
       "phone": "(208) 555-5678",
       "website": "http://www.rexburgmotorsports.com",
-      "image": "chamber/images/motorsports.jpeg",
+      "image": "./images/motorsports.jpeg",
       "membership": "silver"
     },
     {
@@ -69,7 +69,7 @@
       "address": "350 S 2nd E, Rexburg, ID 83440",
       "phone": "(208) 555-9012",
       "website": "http://www.thecraftersparadise.com",
-      "image": "chamber/images/craft.jpeg",
+      "image": "./images/craft.jpeg",
       "membership": "gold"
     }
   ]
