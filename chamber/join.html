@@ -46,71 +46,77 @@
       </nav>
     </header>
     <main>
-      <h1>Membership Form</h1>
-      <form action="thankyou.html" method="get">
-        <label for="first-name">First Name *</label>
-        <input type="text" id="first-name" name="first-name" required /><br />
+      <div class="join-wrapper">
+        <h1>Membership Form</h1>
+        <form action="thankyou.html" method="get">
+          <label for="first-name">First Name *</label>
+          <input type="text" id="first-name" name="first-name" required /><br />
 
-        <label for="last-name">Last Name *</label>
-        <input type="text" id="last-name" name="last-name" required /><br />
+          <label for="last-name">Last Name *</label>
+          <input type="text" id="last-name" name="last-name" required /><br />
 
-        <label for="position">Business Position Title</label>
-        <input
-          type="text"
-          id="position"
-          name="position"
-          pattern="[A-Za-z\s-]{7,}"
-        /><br />
+          <label for="position">Business Position Title</label>
+          <input
+            type="text"
+            id="position"
+            name="position"
+            pattern="[A-Za-z\s-]{7,}"
+          /><br />
 
-        <label for="email">Email *</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="example@example.com"
-          required
-        /><br />
+          <label for="email">Email *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@example.com"
+            required
+          /><br />
 
-        <label for="phone">Cell Phone Number *</label>
-        <input type="tel" id="phone" name="phone" required /><br />
+          <label for="phone">Cell Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required /><br />
 
-        <label for="business-name">Business Name/Title *</label>
-        <input
-          type="text"
-          id="business-name"
-          name="business-name"
-          required
-        /><br />
+          <label for="business-name">Business Name/Title *</label>
+          <input
+            type="text"
+            id="business-name"
+            name="business-name"
+            required
+          /><br />
 
-        <label for="membership-level">Membership Level *</label>
-        <select id="membership-level" name="membership-level" required>
-          <option value="">--Select Membership Level--</option>
-          <option value="NP Membership">NP Membership</option>
-          <option value="Bronze Membership">Bronze Membership</option>
-          <option value="Silver Membership">Silver Membership</option>
-          <option value="Gold Membership">Gold Membership</option></select
-        ><br />
+          <label for="membership-level">Membership Level *</label>
+          <select id="membership-level" name="membership-level" required>
+            <option value="">--Select Membership Level--</option>
+            <option value="NP Membership">NP Membership</option>
+            <option value="Bronze Membership">Bronze Membership</option>
+            <option value="Silver Membership">Silver Membership</option>
+            <option value="Gold Membership">Gold Membership</option></select
+          ><br />
+          <label for="business-description">Business Description</label>
+          <textarea
+            id="business-description"
+            name="business-description"
+          ></textarea
+          ><br />
 
-        <p>Membership Benefits:</p>
-        <ul>
-          <li>NP Membership: No fee</li>
-          <li>Bronze Membership: Increased benefits</li>
-          <li>Silver Membership: Even more benefits</li>
-          <li>Gold Membership: The most benefits</li>
-        </ul>
-        <br />
+          <input
+            type="hidden"
+            id="form-loaded-at"
+            name="form-loaded-at"
+          /><br />
 
-        <label for="business-description">Business Description</label>
-        <textarea
-          id="business-description"
-          name="business-description"
-        ></textarea
-        ><br />
-
-        <input type="hidden" id="form-loaded-at" name="form-loaded-at" /><br />
-
-        <input type="submit" value="Submit Form" />
-      </form>
+          <input type="submit" value="Submit Form" />
+        </form>
+        <div class="membership-benefits">
+          <p>Membership Benefits:</p>
+          <ul>
+            <li>NP Membership: No fee</li>
+            <li>Bronze Membership: Increased benefits</li>
+            <li>Silver Membership: Even more benefits</li>
+            <li>Gold Membership: The most benefits</li>
+          </ul>
+          <br />
+        </div>
+      </div>
     </main>
     <footer>
       <div class="icon"></div>

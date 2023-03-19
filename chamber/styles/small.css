@@ -290,3 +290,11 @@ form {
     background-color: unset;
     transform: unset;
 }
+.membership-benefits{
+    border: solid black 2px;
+    width: 100vw;
+}
+.join-wrapper{
+    display: flex;
+    flex-direction: column;
+}
