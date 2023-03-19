@@ -42,6 +42,7 @@ select{
     padding: 8px;
     border: 1px solid #000000;
     border-radius: unset;
+    width: 180px;
 
   }
   .list .directory-panel img{
@@ -79,6 +80,6 @@ select{
         margin: 0;
         border: none;
         border-radius: unset;
-    
+        width: 100%;
       }
   }
