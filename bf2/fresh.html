@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The final project of Kevin Allred in wdd230 Winter'23. A mock website for bountiful foods, a locally sourced fruit smoothie company."
+    />
+    <title>Bountiful Foods</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/fresh.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="http://">About</a>
+        <a href="./fresh.html">Drinks</a>
+      </nav>
+      <button class="head-button">Order drink</button>
+      <h1 class="main-title">Bountiful Foods</h1>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Build Your Specialty Drink</h1>
+        <form id="drink-order-form" action="confirmation" method="GET">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="fruit1">Fruit 1:</label>
+          <select id="fruit1" name="fruit1" required>
+            <option value="">--Select Fruit--</option>
+          </select>
+
+          <label for="fruit2">Fruit 2:</label>
+          <select id="fruit2" name="fruit2" required>
+            <option value="">--Select Fruit--</option>
+          </select>
+
+          <label for="fruit3">Fruit 3:</label>
+          <select id="fruit3" name="fruit3" required>
+            <option value="">--Select Fruit--</option>
+          </select>
+
+          <label for="instructions">Special Instructions:</label>
+          <textarea id="instructions" name="instructions"></textarea>
+
+          <button id="submit-button">Submit</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p class="footer-name">
+        &copy;Kevin Allred <span id="current-year"></span>
+      </p>
+      <p class="semester">WDD230 Winter '23</p>
+      <p class="email"><a href="mailto:">Send us an Email!</a></p>
+      <p class="last-modified">
+        Last modified at <span id="last-modified-date"></span>.
+      </p>
+      <p class="map">
+        <a href="https://maps.google.com" target="_blank"
+          >Find us on the map!</a
+        >
+      </p>
+      <a
+        class="facebook"
+        href="https://www.facebook.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img
+          class="social-icon"
+          src="./images/f_logo_RGB-Black_58.png"
+          alt="Facebook"
+      /></a>
+      <a
+        class="instagram"
+        href="https://www.instagram.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img
+          class="social-icon"
+          src="./images/Instagram_Glyph_Black.svg"
+          alt="Instagram"
+      /></a>
+      <a
+        class="twitter"
+        href="https://www.twitter.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img
+          class="social-icon"
+          src="./images/2021 Twitter logo - black.png"
+          alt="Twitter"
+      /></a>
+    </footer>
+    <script src="./scripts/stats.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/fresh.js"></script>
+  </body>
+</html>

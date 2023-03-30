@@ -1,0 +1,261 @@
+:root{
+   --strawberry: #fd3679;
+   --pistachio: #36fdba;
+   --sky-blue: #1ca7e3;
+   --sky-blue-desaturated: #1ca7e37b;
+   --granola: #e3581c;
+   --granola-darker: #b84616;
+   --blackberry: #620062;
+}
+
+.strawberry{
+    background-color: var(--strawberry);
+}
+.pistachio{
+    background-color: var(--pistachio);
+}
+.sky-blue{
+    background-color: var(--sky-blue);
+}
+.sky-blue-light{
+    background-color: var(--sky-blue-desaturated);
+}
+.sky-blue * {
+  color: black;
+}
+.granola{
+    background-color: var(--granola);
+}
+.blackberry{
+    background-color: var(--blackberry);
+}
+button{ 
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    
+}
+
+body{
+    /* font-family: 'Farsan', cursive; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: min(3vw, 15px);
+    width: 100vw;
+}
+section *{
+    margin: 3vw;
+}
+
+header{
+    padding:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    /* position: fixed; */
+}
+header *{
+    margin: 0;
+}
+nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration:underline;
+    
+    padding: 1vw;
+
+}
+.active{
+    text-decoration-thickness: 5px;
+    text-decoration-color: white ;
+}
+.bf-logo{
+    width: 10vw;
+    height: 10vw;
+}
+.create-drink{
+    font-size: larger;
+    border: solid 3px var(--granola-darker);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--granola);
+}
+#main-title{
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    margin: 0;
+    padding: 0;
+}
+
+.spacer {
+    aspect-ratio: 960 / 100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.layer1 {
+    background-image: url('../images/header-wave-v4.svg');
+
+}
+
+
+.layer3 {
+    background-image: url('../images/section-2-wave.svg');
+    background-position: bottom;
+
+}
+
+.layer4 {
+    background-image: url('../images/wave-4.5.svg');
+}
+.layer5{
+    background-image: url('../images/our-home.svg');
+}
+
+.drink-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.half-flex-box{
+    width: 50%;
+    border: solid black 2px;
+    margin: 0;
+    height: 75vh;
+}
+
+.drink-template{
+    width: 100%;
+    border-radius: 15px;
+    font-size: max(2vw,15px);
+    border: solid black 2px;
+    padding: 1vw;
+    margin: 0;
+}
+.drink-desc * {
+    margin: 0;
+}
+.drink-desc h2{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+    margin-bottom: 2vw;
+}
+.smoothie-img{
+    border-radius: 15px;
+    width: 15vw;
+    height: 25vw;
+}
+
+#strawberry-smoothie{
+    border: solid var(--sky-blue) 4px;
+}
+#mango-mamma{
+    border: solid var(--granola-darker) 4px;
+}
+
+
+#drink-2 img{
+    width: 25vw;
+}
+#custom-drink-section{
+border: solid 10px black;
+}
+#custom-drink-section *{
+    color: white;
+}
+.section-img{
+    width: 30vw;
+}
+
+#our-home{
+text-align: center;
+border: solid 10px black;
+}
+#our-home h1{
+    font-size: 3em;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.our-home-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.our-home-box p{
+    font-size: 1.5em;
+}
+.current-weather-box{
+    border: solid 3px black;
+}
+.one-day-weather{
+    width: 100%;
+    height: 100%;
+    border: solid black 2px;
+}
+
+#lets-connect{
+    text-align: center;
+    border: solid 10px black;
+    }
+
+#lets-connect h1{
+    font-size: 3em;
+    font-family: 'Permanent Marker', cursive;
+}
+.drink-counter-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#drink-counter{
+    font-size: 5em;
+}
+.socials-box{
+    display: flex;
+    justify-content: space-around;
+}
+.socials-box *{
+    border: solid black 2px;
+}
+footer{
+    margin: 0;
+    padding: 5vw;
+}
+#footer{
+    background-color: var(--sky-blue);
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-wrapper * {
+    font-size: 2vw;
+    margin: 0  ;
+    padding: 0;
+}
+
+.footer-wrapper * a {
+    text-decoration: none;
+    color: unset;
+}
+
+
+

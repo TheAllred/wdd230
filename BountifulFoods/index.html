@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bountiful Foods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Farsan&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/large.css" />
+  </head>
+  <body>
+    <section id="header" class="sky-blue">
+      <header>
+        <img
+          src="./images/BF-LOGO-webp-noBG.png"
+          alt="BF logo"
+          class="bf-logo"
+        />
+        <nav>
+          <a href="./index.html" class="active">Home</a>
+          <a href="">Nav</a>
+          <a href="">Nav</a>
+          <a href="">Nav</a>
+        </nav>
+        <button class="create-drink">Create Drink</button>
+      </header>
+      <div id="main-title">
+        <h1>Bountiful Foods</h1>
+      </div>
+    </section>
+    <section id="drink-1">
+      <img
+        class="smoothie-img"
+        id="strawberry-smoothie"
+        src="./images/strawberry-drink.webp"
+        alt="Strawberry-smoothie"
+        loading="lazy"
+      />
+      <h2 id="title-strawberry">Get a taste of bountiful</h2>
+      <p>
+        Indulge in the sweet and tangy flavors of our strawberry delight,
+        perfect for a hot summer day or a refreshing pick-me-up.
+      </p>
+      <button class="drink-template strawberry">
+        Order Strawberry Delight
+      </button>
+      <img
+        class="smoothie-img"
+        id="mango-mamma"
+        src="./images/mango-mamma.webp"
+        alt="mango mamma"
+        loading="lazy"
+      />
+      <h2>Escape to paradise</h2>
+      <p>
+        Treat your taste buds to a heavenly escape with our mango mamma,
+        blending luscious fruit and creamy textures for a delightful sip every
+        time.
+      </p>
+      <button class="drink-template granola">Order the Mango Mama</button>
+    </section>
+    <section id="custom-drink-section" class="drink-section blackberry">
+      <img
+        src="./images/mystery-drink-noBG.png"
+        alt="mystery-drink"
+        loading="lazy"
+        class="section-img"
+      />
+      <button class="drink-template pistachio" style="color: black">
+        Create Custom Drink
+      </button>
+      <div class="drink-desc">
+        <h2>Blaze your own trail</h2>
+        <p>
+          Create your own custom drink in a unique and personalized drinking
+          experience that perfectly captures your taste preferences and elevates
+          your overall enjoyment of every sip.
+        </p>
+      </div>
+    </section>
+    <section id="our-home">
+      <h1>Our Home</h1>
+      <div class="our-home-box">
+        <img
+          class="section-img"
+          src="./images/strawberry-farm.webp"
+          alt="strawberry farm"
+          loading="lazy"
+        />
+        <p>
+          Located in Carlsbad, CA, we take advantage of the city's thriving
+          agricultural scene by incorporating locally-grown produce into our
+          products. From strawberries to avocados, we source the freshest
+          ingredients from nearby farms to create delicious and healthy
+          offerings. Our business is proud to be part of a community that values
+          and supports its farmers, and we love being able to showcase their
+          hard work in our products. We take the experience of local farmers'
+          markets and farms to you so that the delicious bounty that Carlsbad
+          has to offer is available for all.
+        </p>
+      </div>
+      <div class="current-weather-box">
+        <h1>Current weather</h1>
+        Current weather data
+      </div>
+      <div class="our-home-box">
+        <div class="one-day-weather">Day 1</div>
+        <div class="one-day-weather">Day 2</div>
+        <div class="one-day-weather">Day3</div>
+      </div>
+    </section>
+    <!-- <div class="spacer layer5"></div> -->
+    <section id="lets-connect">
+      <h1>Lets connect</h1>
+      <p>
+        You've ordered quite a few drinks already, follow us to never miss out
+        on a killer deal!
+      </p>
+      <div class="drink-counter-box">
+        <div id="drink-counter">5</div>
+      </div>
+      <div class="socials-box">
+        <a href="instagram.com">img of IG</a>
+        <a href="facebook.com">img of FB</a>
+        <a href="twitter.com">img of Twitter</a>
+      </div>
+    </section>
+    <section id="footer">
+      <footer>
+        <div class="footer-wrapper">
+          <p>&copy;Kevin Allred <span id="current-year"></span></p>
+          <p>WDD230 Winter '23</p>
+          <p><a href="mailto:">Send us an Email!</a></p>
+        </div>
+        <div class="footer-wrapper">
+          <p>Last modified <span id="last-modified"></span></p>
+          <p>
+            <a href="https://maps.google.com" target="_blank"
+              >Find us on the map!</a
+            >
+          </p>
+        </div>
+      </footer>
+      <script src="./scripts/weather.js"></script>
+    </section>
+  </body>
+</html>

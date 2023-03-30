@@ -1,0 +1,147 @@
+:root{
+    font-size: clamp(15px,3vw,30px);
+
+}
+*{
+    margin: 0;
+}
+.logo{
+    width: 5rem;
+    height: 5rem;
+    background-image: url('../images/BF-LOGO.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: a;
+}
+.social-icon{
+    height: min(3rem,58px);
+}
+header{
+    display: grid;
+    grid-template-areas: "a b b b c"
+                         "d d d d d";
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+nav{
+    grid-area: b;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+section{
+    margin-top: 10vw;
+}
+.head-button{
+    grid-area: c;
+}
+.main-title{
+    grid-area: d;
+}
+
+.drink-templates{
+    display: grid;
+    grid-template-areas: "a b";
+}
+.drink-one{
+    grid-area: a;
+    text-align: center;
+}
+.drink-two{
+    grid-area: b;
+    text-align: center;
+}
+.custom-drink{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-us{
+    display: grid;
+    grid-template-areas: "a b b"
+                         "a b b"
+                         "c c c"
+                         "c c c";
+    grid-template-columns:1fr 1fr 1fr ;
+    align-items: center;
+    justify-items: center;
+}
+.strawberry-girl{
+    grid-area: a;
+}
+.carlsbad-desc{
+    grid-area: b;
+}
+.weather-wrapper{
+    margin-top: 10vw;
+    width: 100%;
+    grid-area: c;
+}
+.forecast-wrapper{
+    display: grid;
+    grid-template-areas: "a b c"
+                         "a b c"
+                         "a b c";
+    justify-items: center;
+}
+.current-weather-panel{
+    text-align: center;
+}
+.day-one-panel{
+grid-area: a;
+}
+.day-two-panel{
+    grid-area: b;
+}
+.day-three-panel{
+    grid-area: c;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#drink-count{
+    font-size: 3rem;
+}
+
+footer{
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    display: grid;
+    grid-template-areas: "a b c"
+                         "d e f"
+                         "g h i";
+                         gap: 3vw;
+                         justify-items: center;
+                         grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-name{
+    grid-area: a;
+}
+.semester{
+    grid-area: b;
+}
+.email{
+    grid-area: c;
+}
+.last-modified{
+    grid-area: d;
+    text-align: center;
+}
+.map{
+    grid-area: e;
+}
+.facebook{
+    grid-area: g;
+}
+.instagram{
+    grid-area: h;
+}
+.twitter{
+    grid-area: i;
+}
