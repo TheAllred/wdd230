@@ -24,6 +24,7 @@ header{
     justify-content: space-evenly;
     align-items: center;
     justify-items: center;
+
 }
 nav{
     grid-area: b;
@@ -31,11 +32,46 @@ nav{
     width: 100%;
     justify-content: space-evenly;
 }
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FAD02C;
+  color: black;
+  text-decoration: none;
+  border: 2px solid #846a00;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  background-color: transparent;
+  color: #FAD02C;
+  border: 2px solid #FAD02C;
+}
+
+
 section{
     margin-top: 10vw;
 }
-.head-button{
-    grid-area: c;
+.order-drink-button {
+  grid-area: c;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fe5473;
+  border: 2px solid #870f25;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.order-drink-button:hover {
+  background-color: transparent;
+  color: #870f25;
+}
+
+.order-drink-button:focus {
+  outline: none;
 }
 .main-title{
     grid-area: d;
@@ -44,6 +80,8 @@ section{
 .drink-templates{
     display: grid;
     grid-template-areas: "a b";
+    margin: 5vw;
+    gap: 10vw;
 }
 .drink-one{
     grid-area: a;
@@ -53,6 +91,41 @@ section{
     grid-area: b;
     text-align: center;
 }
+
+.drink-one,
+.drink-two {
+  border: 1px solid #ddd;
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.drink-one:hover,
+.drink-two:hover {
+  border-color: #FAD02C;
+  transform: scale(1.05);
+}
+
+.drink-one h2,
+.drink-two h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.drink-one p,
+.drink-two p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.drink-templates img {
+  width: 15vw;
+  border: 5px solid #ff0404;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+
+
 .custom-drink{
     display: flex;
     justify-content: space-evenly;
@@ -99,6 +172,73 @@ grid-area: a;
     grid-area: c;
 }
 
+.weather-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #e6f2ff;
+padding-top: 10vw;
+padding-bottom: 10vw;
+  border-radius: 10px;
+
+}
+
+.current-weather-panel {
+  text-align: center;
+}
+
+.current-weather-panel h3 {
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+.current-weather-panel img {
+  height: 100px;
+  margin: 20px 0;
+}
+
+.forecast-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.day-one-pannel,
+.day-two-pannel,
+.day-three-pannel {
+  flex-basis: 30%;
+  text-align: center;
+  background-color: #b3e6ff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.day-one-pannel h3,
+.day-two-pannel h3,
+.day-three-pannel h3 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.day-one-pannel img,
+.day-two-pannel img,
+.day-three-pannel img {
+  height: 60px;
+  margin: 10px 0;
+}
+
+.current-humidity,
+.current-humidity1,
+.current-humidity2,
+.current-humidity3,
+.condition-desc,
+.condition-desc1,
+.condition-desc2,
+.condition-desc3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+
 .stats{
     display: flex;
     flex-direction: column;
@@ -111,7 +251,7 @@ grid-area: a;
 
 footer{
     margin-top: 10vw;
-    margin-bottom: 10vw;
+    padding-bottom: 5vw;
     display: grid;
     grid-template-areas: "a b c"
                          "d e f"
@@ -119,7 +259,10 @@ footer{
                          gap: 3vw;
                          justify-items: center;
                          grid-template-columns: 1fr 1fr 1fr;
+    border: solid black 5px;
+    
 }
+
 .footer-name{
     grid-area: a;
 }
@@ -145,3 +288,4 @@ footer{
 .twitter{
     grid-area: i;
 }
+

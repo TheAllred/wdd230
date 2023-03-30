@@ -17,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/fresh.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
   </head>
   <body>
     <header>
@@ -31,39 +31,48 @@
       <h1 class="main-title">Bountiful Foods</h1>
     </header>
     <main>
-      <div class="container">
-        <h1>Build Your Specialty Drink</h1>
-        <form id="drink-order-form" action="confirmation" method="GET">
-          <label for="firstName">First Name:</label>
-          <input type="text" id="firstName" name="firstName" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" required />
-
-          <label for="fruit1">Fruit 1:</label>
-          <select id="fruit1" name="fruit1" required>
-            <option value="">--Select Fruit--</option>
-          </select>
-
-          <label for="fruit2">Fruit 2:</label>
-          <select id="fruit2" name="fruit2" required>
-            <option value="">--Select Fruit--</option>
-          </select>
-
-          <label for="fruit3">Fruit 3:</label>
-          <select id="fruit3" name="fruit3" required>
-            <option value="">--Select Fruit--</option>
-          </select>
-
-          <label for="instructions">Special Instructions:</label>
-          <textarea id="instructions" name="instructions"></textarea>
-
-          <button id="submit-button">Submit</button>
-        </form>
-      </div>
+      <section>
+        <h1>About Us</h1>
+        <p>
+          Bountiful Foods is a small business specializing in organic, locally
+          grown foods. We are physically located in Carlsbad, California,
+          however, we have many food trucks that cover the coastal area from Los
+          Angeles to San Diego. We sell fruits and produce directly from the
+          farmers in the area, but also use some national and international
+          suppliers.
+        </p>
+        <p>
+          Our owner-operated company caters to walk-in traffic at our storefront
+          in Carlsbad and, of course, our food trucks. Our mission is to provide
+          fresh and healthy food options, including organic, made-to-order fruit
+          drinks and fruit bags, to the local population and to tourists
+          visiting the coastal areas.
+        </p>
+      </section>
+      <section>
+        <h2>Our History</h2>
+        <p>
+          Bountiful Foods was founded in 2005 by John and Jane Doe. They started
+          out selling their own backyard produce at local farmers markets, but
+          quickly grew to include other local farmers and suppliers. In 2010,
+          they opened their storefront in Carlsbad and began operating food
+          trucks along the coast.
+        </p>
+      </section>
+      <section>
+        <h2>Contact Us</h2>
+        <p>Phone: 555-555-5555</p>
+        <p>Email: info@bountifulfoods.com</p>
+        <p>Address: 123 Main St, Carlsbad, CA 92008</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.439242256786!2d-117.34690168493213!3d33.16095208083515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc76cf1900b753%3A0xb76e0ba330d0b43!2sBountiful%20Foods!5e0!3m2!1sen!2sus!4v1659311211382!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
     </main>
     <footer>
       <p class="footer-name">
@@ -110,8 +119,8 @@
           alt="Twitter"
       /></a>
     </footer>
+    <script src="./scripts/weather.js"></script>
     <script src="./scripts/stats.js"></script>
     <script src="./scripts/main.js"></script>
-    <script src="./scripts/fresh.js"></script>
   </body>
 </html>

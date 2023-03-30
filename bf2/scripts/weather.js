@@ -22,6 +22,12 @@ const lon = "-117.3506";
 const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${APIkey}&units=imperial`;
 
 function displayResults(weatherData) {
+  const targetTime = "12:00:00";
+  const noonWeatherData = weatherData.list.filter((day) =>
+    day.dt_txt.endsWith(targetTime)
+  );
+  console.log(noonWeatherData);
+
   currentTemp.textContent = weatherData.list[0].main.temp;
 
   const desc = weatherData.list[0].weather[0].description;
@@ -35,39 +41,39 @@ function displayResults(weatherData) {
   weatherIcon.setAttribute("alt", desc);
 
   //day 1
-  currentTemp1.textContent = weatherData.list[1].main.temp;
+  currentTemp1.textContent = noonWeatherData[0].main.temp;
 
-  const desc1 = weatherData.list[1].weather[0].description;
+  const desc1 = noonWeatherData[0].weather[0].description;
   captionDesc1.textContent = desc;
-  humidityElement1.textContent = `${weatherData.list[1].main.humidity}% Humidity`;
+  humidityElement1.textContent = `${noonWeatherData[0].main.humidity}% Humidity`;
 
-  const iconsrc1 = `https://openweathermap.org/img/wn/${weatherData.list[1].weather[0].icon}@2x.png`;
+  const iconsrc1 = `https://openweathermap.org/img/wn/${noonWeatherData[0].weather[0].icon}@2x.png`;
 
   weatherIcon1.setAttribute("src", iconsrc1);
 
   weatherIcon1.setAttribute("alt", desc1);
 
   //day 2
-  currentTemp2.textContent = weatherData.list[2].main.temp;
+  currentTemp2.textContent = noonWeatherData[1].main.temp;
 
-  const desc2 = weatherData.list[2].weather[0].description;
+  const desc2 = noonWeatherData[1].weather[0].description;
   captionDesc2.textContent = desc;
-  humidityElement2.textContent = `${weatherData.list[2].main.humidity}% Humidity`;
+  humidityElement2.textContent = `${noonWeatherData[1].main.humidity}% Humidity`;
 
-  const iconsrc2 = `https://openweathermap.org/img/wn/${weatherData.list[2].weather[0].icon}@2x.png`;
+  const iconsrc2 = `https://openweathermap.org/img/wn/${noonWeatherData[1].weather[0].icon}@2x.png`;
 
   weatherIcon2.setAttribute("src", iconsrc2);
 
   weatherIcon2.setAttribute("alt", desc2);
 
   //day 3
-  currentTemp3.textContent = weatherData.list[3].main.temp;
+  currentTemp3.textContent = noonWeatherData[2].main.temp;
 
-  const desc3 = weatherData.list[3].weather[0].description;
+  const desc3 = noonWeatherData[2].weather[0].description;
   captionDesc3.textContent = desc;
-  humidityElement3.textContent = `${weatherData.list[3].main.humidity}% Humidity`;
+  humidityElement3.textContent = `${noonWeatherData[2].main.humidity}% Humidity`;
 
-  const iconsrc3 = `https://openweathermap.org/img/wn/${weatherData.list[3].weather[0].icon}@2x.png`;
+  const iconsrc3 = `https://openweathermap.org/img/wn/${noonWeatherData[2].weather[0].icon}@2x.png`;
 
   weatherIcon3.setAttribute("src", iconsrc3);
 
