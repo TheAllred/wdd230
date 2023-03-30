@@ -23,7 +23,7 @@ const submitButton = document.querySelector("#submit-button");
 
 async function apiFetch() {
   try {
-    const response = await fetch("../data/fruit.json");
+    const response = await fetch("./data/fruit.json");
     if (response.ok) {
       const data = await response.json();
       console.log(data); // this is for testing the call
