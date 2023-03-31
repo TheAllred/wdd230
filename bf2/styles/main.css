@@ -2,7 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 :root{
-    font-size: clamp(15px,3vw,30px);
+    font-size: clamp(15px,3vw,20px);
     --strawberry: #fd3679;
     --pistachio: #36fdba;
     --sky-blue: #1ca7e3;
@@ -17,6 +17,9 @@ body{
 }
 h1,h2,h3{
   font-family: 'Permanent Marker', cursive;
+}
+a,p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 *{
@@ -43,6 +46,7 @@ header{
     align-items: center;
     justify-items: center;
     background-color: #1ca7e3de;
+    padding: 1rem;
 
 }
 
@@ -51,9 +55,6 @@ header{
     grid-template-areas: "a b c"
     "d d d";
     grid-template-columns: 1fr 1fr 1fr;
- }
- nav > *:nth-child(odd) {
-  display: none;
  }
  .down-arrow a{
   display: none;
@@ -108,14 +109,20 @@ nav a:hover {
   justify-content: center;
   padding: 1rem;
   
-
+  
+}
+.down-arrow a {
+  transform: scale(1.5);
+  
 }
 .down-arrow a:hover{
-  color: var(--strawberry);
+  
+  transform: scale(2.5);
 }
 .down-arrow a{
   color: black;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 .main-title{
   border-radius: 15px;
@@ -297,7 +304,7 @@ nav a:hover {
     grid-template-columns:1fr 1fr 1fr ;
     align-items: center;
     justify-items: center;
-    padding: 8vw;
+    padding: 3rem;
 }
 
 @media (max-width:500px){
@@ -375,7 +382,7 @@ padding: 4vw;
   .day-one-pannel,
   .day-two-pannel,
   .day-three-pannel {
-    width: 20rem;
+    /* width: 20rem; */
   }
 }
 

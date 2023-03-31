@@ -21,6 +21,10 @@ if (counter) {
   } else if (orderCount === 1) {
     counter.textContent = orderCount;
     counterDesc.textContent = "drink so far.";
+  } else if (!orderCount) {
+    counter.textContent = "0";
+    encouragement.textContent =
+      "What are you waiting for? Order your first drink right now!";
   } else {
     counter.textContent = orderCount;
     counterDesc.textContent = "drinks so far.";
