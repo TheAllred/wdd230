@@ -16,7 +16,7 @@ body{
 
 }
 h1,h2,h3{
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Permanent Marker', Verdana, Geneva, Tahoma, sans-serif;
 }
 a,p{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -403,7 +403,8 @@ padding: 4vw;
     justify-content: center;
 }
 #drink-count{
-    font-size: 3rem;
+    font-size: 6rem;
+    font-family: 'Permanent Marker', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 footer{
