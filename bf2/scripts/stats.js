@@ -1,5 +1,4 @@
 let orderCount = localStorage.getItem("orderCount");
-console.log(orderCount);
 if (!orderCount) {
   localStorage.setItem("orderCount", 0);
 }
@@ -40,6 +39,5 @@ function incrementCounter() {
   localStorage.setItem("orderCount", orderCount + 1);
   counterIncrement.disabled = true;
   counterIncrement.textContent = "Order Confirmed";
-  console.log("Order confirmed!");
   returnLink.style.display = "block";
 }

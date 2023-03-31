@@ -24,10 +24,6 @@ function displayResults(weatherData) {
     day.dt_txt.endsWith(targetTime)
   );
 
-  console.log(weatherData);
-  console.log(weatherData.list[0].dt_txt);
-  console.log(noonWeatherData);
-
   //Dates for weather day 1
   const date1 = new Date(noonWeatherData[0].dt_txt);
   const month1 = date1.getMonth() + 1;
