@@ -9,6 +9,12 @@
       content="The final project of Kevin Allred in wdd230 Winter'23. A mock website for bountiful foods, a locally sourced fruit smoothie company."
     />
     <title>Bountiful Foods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Farsan&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -20,40 +26,58 @@
   </head>
   <body>
     <header>
-      <div class="logo"></div>
+      <a href="./index.html"><div class="logo"></div></a>
       <nav>
-        <a href="./index.html">Home</a>
+        <a class="active" href="./index.html">Home</a>
         <a href="./about.html">About</a>
         <a href="./fresh.html">Drinks</a>
       </nav>
       <a class="order-drink-button" href="./fresh.html">Order Drink</a>
-      <h1 class="main-title">Bountiful Foods</h1>
     </header>
+    <div class="hero">
+      <div class="main-title">
+        <h1>Bountiful Foods</h1>
+        <p>
+          Elevate your taste buds and nourish your body with our range of
+          irresistible smoothies
+        </p>
+        <a class="order-drink-button" href="./fresh.html">Order Drink</a>
+      </div>
+    </div>
+    <div class="down-arrow"><a href="#drink-template-section">V</a></div>
+
     <main>
-      <section class="drink-templates">
+      <section id="drink-template-section" class="drink-templates">
+        <h2 class="template-header">Our favorites</h2>
         <div class="drink-one">
-          <img src="./images/strawberry-drink.webp" alt="strawberry drink" />
-          <h2>Strawberry Smoothie</h2>
-          <p>
-            A refreshing and fruity blend of fresh strawberries, banana, and
-            orange juice, topped with whipped cream and a drizzle of honey.
-          </p>
+          <div class="filter">
+            <h2>Strawberry Delight</h2>
+            <p>
+              A refreshing and fruity blend of fresh strawberries, banana, and
+              orange juice, topped with whipped cream and a drizzle of honey.
+            </p>
+          </div>
         </div>
         <div class="drink-two">
-          <img src="./images/mango-mamma.webp" alt="Mango Drink" />
-          <h2>Mango Mamma</h2>
-          <p>
-            A tropical delight made with juicy mangoes, coconut milk, and a
-            splash of lime juice, garnished with fresh mint and a slice of
-            pineapple.
-          </p>
+          <div class="filter">
+            <h2>Mango Mamma</h2>
+            <p>
+              A tropical delight made with juicy mangoes, coconut milk, and a
+              splash of lime juice, garnished with fresh mint and a slice of
+              pineapple.
+            </p>
+          </div>
         </div>
       </section>
       <section class="custom-drink">
         <img src="./images/mystery-drink.webp" alt="mystery-drink" />
         <div>
-          <h2>Choose your own adventure</h2>
-          <p>why make your own drink</p>
+          <h2>Choose Your Own Adventure</h2>
+          <p>
+            Create your own custom drink in a unique and personalized drinking
+            experience that perfectly captures your taste preferences and
+            elevates your overall enjoyment of every sip.
+          </p>
           <a class="order-drink-button" href="./fresh.html"
             >Create Custom Drink</a
           >
@@ -80,28 +104,38 @@
           </p>
         </div>
         <div class="weather-wrapper">
-          <div class="current-weather-panel">
-            <h3><span id="current-temp"></span>℉</h3>
-            <img id="weather-icon" src="" alt="" />
-            <div id="current-humidity"></div>
-            <div id="condition-desc"></div>
-          </div>
+          <h2>Weather in Carlsbad</h2>
           <div class="forecast-wrapper">
             <div class="day-one-pannel">
+              <h3 class="date" id="day-one-date"></h3>
+              <img
+                id="weather-icon1"
+                src="https://openweathermap.org/img/wn/03n@2x.png"
+                alt="placeholder icon"
+              />
               <h3><span id="current-temp1"></span>℉</h3>
-              <img id="weather-icon1" src="" alt="" />
               <div id="current-humidity1"></div>
               <div id="condition-desc1"></div>
             </div>
             <div class="day-two-pannel">
+              <h3 class="date" id="day-two-date"></h3>
+              <img
+                id="weather-icon2"
+                src="https://openweathermap.org/img/wn/03n@2x.png"
+                alt="placeholder icon"
+              />
               <h3><span id="current-temp2"></span>℉</h3>
-              <img id="weather-icon2" src="" alt="" />
               <div id="current-humidity2"></div>
               <div id="condition-desc2"></div>
             </div>
             <div class="day-three-pannel">
+              <h3 class="date" id="day-three-date"></h3>
+              <img
+                id="weather-icon3"
+                src="https://openweathermap.org/img/wn/03n@2x.png"
+                alt="placeholder icon"
+              />
               <h3><span id="current-temp3"></span>℉</h3>
-              <img id="weather-icon3" src="" alt="" />
               <div id="current-humidity3"></div>
               <div id="condition-desc3"></div>
             </div>
@@ -109,8 +143,8 @@
         </div>
       </section>
       <section class="stats">
-        <h2>Stats</h2>
-        <p>who doesnt love numbers?</p>
+        <!-- <h2>Stats</h2>
+        <p>who doesnt love numbers?</p> -->
         <p>You've ordered</p>
         <span id="drink-count"></span>
         <p id="counter-desc"></p>
@@ -158,7 +192,7 @@
         rel="noopener noreferrer"
         ><img
           class="social-icon"
-          src="./images/2021 Twitter logo - black.png"
+          src="./images/2021-Twitter-logo-black.png"
           alt="Twitter"
       /></a>
     </footer>

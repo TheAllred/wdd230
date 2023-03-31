@@ -26,30 +26,35 @@ function calculateTotals(data) {
   const fruit1 = data.find((fruit) => fruit.name === fruit1Name);
   const fruit2 = data.find((fruit) => fruit.name === fruit2Name);
   const fruit3 = data.find((fruit) => fruit.name === fruit3Name);
-  const totalProtein =
+  const totalProtein = Math.floor(
     fruit1.nutritions.protein +
-    fruit2.nutritions.protein +
-    fruit3.nutritions.protein;
+      fruit2.nutritions.protein +
+      fruit3.nutritions.protein
+  );
   document.querySelector("#total-protein").textContent = totalProtein;
 
-  const totalFat =
-    fruit1.nutritions.fat + fruit2.nutritions.fat + fruit3.nutritions.fat;
+  const totalFat = Math.floor(
+    fruit1.nutritions.fat + fruit2.nutritions.fat + fruit3.nutritions.fat
+  );
   document.querySelector("#total-fat").textContent = totalFat;
 
-  const totalSugar =
-    fruit1.nutritions.sugar + fruit2.nutritions.sugar + fruit3.nutritions.sugar;
+  const totalSugar = Math.floor(
+    fruit1.nutritions.sugar + fruit2.nutritions.sugar + fruit3.nutritions.sugar
+  );
   document.querySelector("#total-sugar").textContent = totalSugar;
 
-  const totalCalories =
+  const totalCalories = Math.floor(
     fruit1.nutritions.calories +
-    fruit2.nutritions.calories +
-    fruit3.nutritions.calories;
+      fruit2.nutritions.calories +
+      fruit3.nutritions.calories
+  );
   document.querySelector("#total-calories").textContent = totalCalories;
 
-  const totalCarbs =
+  const totalCarbs = Math.floor(
     fruit1.nutritions.carbohydrates +
-    fruit2.nutritions.carbohydrates +
-    fruit3.nutritions.carbohydrates;
+      fruit2.nutritions.carbohydrates +
+      fruit3.nutritions.carbohydrates
+  );
   document.querySelector("#total-carbs").textContent = totalCarbs;
 }
 

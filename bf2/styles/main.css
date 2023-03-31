@@ -1,7 +1,24 @@
+html{
+  scroll-behavior: smooth;
+}
 :root{
     font-size: clamp(15px,3vw,30px);
+    --strawberry: #fd3679;
+    --pistachio: #36fdba;
+    --sky-blue: #1ca7e3;
+    --sky-blue-desaturated: #1ca7e37b;
+    --granola: #e3581c;
+    --granola-darker: #b84616;
+    --blackberry: #620062;
+}
+body{
+  background-color: #ff8c8c2a;
 
 }
+h1,h2,h3{
+  font-family: 'Permanent Marker', cursive;
+}
+
 *{
     margin: 0;
 }
@@ -18,13 +35,29 @@
     height: min(3rem,58px);
 }
 header{
+
     display: grid;
     grid-template-areas: "a b b b c"
                          "d d d d d";
     justify-content: space-evenly;
     align-items: center;
     justify-items: center;
+    background-color: #1ca7e3de;
 
+}
+
+@media screen and (max-width: 400px) {
+  header{
+    grid-template-areas: "a b c"
+    "d d d";
+    grid-template-columns: 1fr 1fr 1fr;
+ }
+ nav > *:nth-child(odd) {
+  display: none;
+ }
+ .down-arrow a{
+  display: none;
+ }
 }
 nav{
     grid-area: b;
@@ -35,24 +68,63 @@ nav{
 nav a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #FAD02C;
+
   color: black;
   text-decoration: none;
-  border: 2px solid #846a00;
+
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
 }
 
+nav .active{
+  color: var(--granola-darker);
+  text-decoration: underline;
+}
+
 nav a:hover {
-  background-color: transparent;
-  color: #FAD02C;
-  border: 2px solid #FAD02C;
+  color: var(--granola-darker);
+  text-decoration: underline;
 }
 
 
-section{
-    margin-top: 10vw;
+.hero{
+  background-image: url('../images/pexels-jane-doan-1092730.webp');
+  width: 100vw;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.3) -4px -1px 38px 17px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
 }
+
+.down-arrow{
+  margin:  auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  
+
+}
+.down-arrow a:hover{
+  color: var(--strawberry);
+}
+.down-arrow a{
+  color: black;
+  text-decoration: none;
+}
+.main-title{
+  border-radius: 15px;
+  padding: 1rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+
+}
+
 .order-drink-button {
   grid-area: c;
   text-decoration: none;
@@ -60,76 +132,161 @@ section{
   display: inline-block;
   padding: 10px 20px;
   background-color: #fe5473;
-  border: 2px solid #870f25;
+  border: 2px solid #430813;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
+  text-align: center;
 }
 
 .order-drink-button:hover {
-  background-color: transparent;
-  color: #870f25;
+  background-color: var(--pistachio);
+  color: #430813;
 }
 
 .order-drink-button:focus {
   outline: none;
 }
 .main-title{
-    grid-area: d;
+  grid-area: d;
+  max-width: 50vw;
+}
+.main-title p {
+  padding: 10px;
+}
+.main-title .order-drink-button:hover {
+  background-color: var(--pistachio);
+  color: #430813;
+}
+.template-header{
+  grid-area: c;
 }
 
 .drink-templates{
     display: grid;
-    grid-template-areas: "a b";
-    margin: 5vw;
-    gap: 10vw;
+    grid-template-areas: "c c"
+                         "a b";
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+    gap: 2rem;
+    justify-items: center;
+    
+    
 }
+
+@media screen and (max-width: 450px) {
+  .drink-templates {
+    grid-template-areas: 
+      "c"
+      "a"
+      "b";
+    grid-template-columns: 1fr;
+  }
+  .drink-one p,
+.drink-two p {display: none;}
+  
+.drink-one .filter h2,
+.drink-two .filter h2 {color: white;}
+
+.drink-one .filter,
+.drink-two  .filter{
+  backdrop-filter: brightness(20%);}
+}
+
 .drink-one{
     grid-area: a;
-    text-align: center;
+    text-align: left;
+    background-image: url("../images/strawberry-drink.webp");
+    background-size:cover ;
+    background-position:center;
+    
 }
 .drink-two{
-    grid-area: b;
-    text-align: center;
+  grid-area: b;
+  text-align: left;
+  background-image: url('../images/mango-mamma.webp');
+  background-size: cover ;
+    background-position: top;
 }
 
 .drink-one,
 .drink-two {
   border: 1px solid #ddd;
   padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 18px 18px 15px 0px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
   transition: all 0.2s ease-in-out;
+  border-radius: 15px;
+  max-width: 14rem;
+}
+.filter{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 20px;
+
 }
 
 .drink-one:hover,
 .drink-two:hover {
   border-color: #FAD02C;
   transform: scale(1.05);
+  
 }
+
+.drink-one:hover .filter,
+.drink-two:hover  .filter{
+  backdrop-filter: brightness(20%);
+
+}
+.drink-one:hover .filter *,
+.drink-two:hover  .filter *{
+  color: white;
+}
+
+
 
 .drink-one h2,
 .drink-two h2 {
+  color: #1ca7e300;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .drink-one p,
 .drink-two p {
+  color: #1ca7e300;
   font-size: 1.2rem;
   line-height: 1.5;
-}
 
-.drink-templates img {
-  width: 15vw;
-  border: 5px solid #ff0404;
-  transition: all 0.3s ease;
-  border-radius: 10px;
 }
-
 
 
 .custom-drink{
+  background-color: var(--blackberry);
+  color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 5vw;
+}
+
+@media (max-width: 800px){
+  .custom-drink{flex-direction: column;}
+
+  .custom-drink img {max-width: 100vw;}
+}
+
+.custom-drink h2{margin: 5vw;}
+.custom-drink p{margin: 5vw;}
+.custom-drink .order-drink-button{
+  margin-left: 5vw;
+}
+
+@media (max-width:500px){
+  .about-us{
+    display: flex;
+    flex-direction: column;
+  }
 }
 .about-us{
     display: grid;
@@ -140,56 +297,64 @@ section{
     grid-template-columns:1fr 1fr 1fr ;
     align-items: center;
     justify-items: center;
+    padding: 8vw;
 }
+
+@media (max-width:500px){
+  .about-us{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .strawberry-girl{
     grid-area: a;
+    margin-right: 4vw;
+    border-radius: 2rem;
 }
 .carlsbad-desc{
     grid-area: b;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    
 }
 .weather-wrapper{
     margin-top: 10vw;
     width: 100%;
     grid-area: c;
 }
-.forecast-wrapper{
-    display: grid;
-    grid-template-areas: "a b c"
-                         "a b c"
-                         "a b c";
-    justify-items: center;
-}
-.current-weather-panel{
-    text-align: center;
-}
-.day-one-panel{
-grid-area: a;
-}
-.day-two-panel{
-    grid-area: b;
-}
-.day-three-panel{
-    grid-area: c;
-}
 
+.date{
+  font-size: 1.5em;
+}
 .weather-wrapper {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-areas: "a a a"
+                       "c c c"
+                       "c c c";
+  
   background-color: #e6f2ff;
-padding-top: 10vw;
-padding-bottom: 10vw;
+padding: 4vw;
   border-radius: 10px;
+  justify-items: center;
+  align-items: center;
 
 }
+
+.weather-wrapper h2,
+.weather-wrapper h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  grid-area: a;
+  padding: 4vw;
+}
+
 
 .current-weather-panel {
   text-align: center;
+  grid-area: b;
 }
 
-.current-weather-panel h3 {
-  font-size: 48px;
-  margin-bottom: 0;
-}
 
 .current-weather-panel img {
   height: 100px;
@@ -199,45 +364,30 @@ padding-bottom: 10vw;
 .forecast-wrapper {
   display: flex;
   justify-content: space-between;
+  grid-area: c;
+}
+
+@media (max-width: 500px) {
+  .forecast-wrapper {
+    flex-direction: column;
+    justify-content: unset;
+  }
+  .day-one-pannel,
+  .day-two-pannel,
+  .day-three-pannel {
+    width: 20rem;
+  }
 }
 
 .day-one-pannel,
 .day-two-pannel,
 .day-three-pannel {
-  flex-basis: 30%;
   text-align: center;
   background-color: #b3e6ff;
   border-radius: 10px;
   padding: 10px;
+  margin: 1vw;
 }
-
-.day-one-pannel h3,
-.day-two-pannel h3,
-.day-three-pannel h3 {
-  font-size: 24px;
-  margin-bottom: 0;
-}
-
-.day-one-pannel img,
-.day-two-pannel img,
-.day-three-pannel img {
-  height: 60px;
-  margin: 10px 0;
-}
-
-.current-humidity,
-.current-humidity1,
-.current-humidity2,
-.current-humidity3,
-.condition-desc,
-.condition-desc1,
-.condition-desc2,
-.condition-desc3 {
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-
 
 .stats{
     display: flex;
@@ -251,7 +401,7 @@ padding-bottom: 10vw;
 
 footer{
     margin-top: 10vw;
-    padding-bottom: 5vw;
+    padding: 5vw;
     display: grid;
     grid-template-areas: "a b c"
                          "d e f"
@@ -259,8 +409,20 @@ footer{
                          gap: 3vw;
                          justify-items: center;
                          grid-template-columns: 1fr 1fr 1fr;
-    border: solid black 5px;
+    background-color: var(--sky-blue-desaturated);
     
+}
+
+footer a:hover img{
+}
+footer a{
+  color: black;
+  text-decoration: none;
+}
+footer a:hover{
+  filter: invert(100%);
+  color: var(--strawberry);
+  text-decoration: underline;
 }
 
 .footer-name{
