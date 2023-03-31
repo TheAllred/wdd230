@@ -25,6 +25,7 @@ if (counter) {
     counter.textContent = "0";
     encouragement.textContent =
       "What are you waiting for? Order your first drink right now!";
+    counterDesc.textContent = "drinks so far.";
   } else {
     counter.textContent = orderCount;
     counterDesc.textContent = "drinks so far.";
