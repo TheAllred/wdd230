@@ -98,8 +98,23 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.3) -4px -1px 38px 17px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-
 }
+
+.stats{
+  font-size: 1.4rem;
+  margin: 4rem auto 4rem auto;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#drink-count{
+  font-size: 1.5em;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
 
 .down-arrow{
   margin:  auto;
@@ -136,6 +151,7 @@ nav a:hover {
   text-decoration: none;
   color: black;
   display: inline-block;
+  margin-top: 1rem;
   padding: 10px 20px;
   background-color: #fe5473;
   border: 2px solid #430813;
@@ -143,11 +159,27 @@ nav a:hover {
   transition: all 0.2s ease-in-out;
   text-align: center;
 }
+ #current-page {
+  grid-area: c;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+
+  border: 2px solid #430813;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  background-color: var(--pistachio);
+  color: #430813;
+}
 
 .order-drink-button:hover {
   background-color: var(--pistachio);
   color: #430813;
 }
+
 
 .order-drink-button:focus {
   outline: none;
@@ -155,6 +187,7 @@ nav a:hover {
 .main-title{
   grid-area: d;
   max-width: 50vw;
+  font-size: 1.6rem;
 }
 .main-title p {
   padding: 10px;
@@ -168,6 +201,7 @@ nav a:hover {
 }
 
 .drink-templates{
+  font-size: 1.4rem;
     display: grid;
     grid-template-areas: "c c"
                          "a b";
@@ -320,6 +354,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
   }
+  
 }
 
 .strawberry-girl{
@@ -335,46 +370,66 @@ nav a:hover {
     
 }
 .weather-wrapper{
-    margin-top: 10vw;
+    margin-top: 1rem;
     width: 100%;
     grid-area: c;
-}
-
-.date{
-  font-size: 1.5em;
-}
-.weather-wrapper {
   display: grid;
   grid-template-areas: "a a a"
+                       "b b b"
                        "c c c"
                        "c c c";
   
   background-color: #e6f2ff;
-padding: 4vw;
+  padding: 4vw;
   border-radius: 10px;
   justify-items: center;
   align-items: center;
 
 }
 
-.weather-wrapper h2,
-.weather-wrapper h3{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  grid-area: a;
-  padding: 4vw;
+@media screen and (min-width: 800px) {
+  .weather-wrapper {
+
+    grid-template-areas: "a b b"
+                         "a c c";
+    grid-template-rows: 1fr 1fr;
+  }
+  .three-day-forecast{
+
+  }
 }
 
-
-.current-weather-panel {
-  text-align: center;
+.three-day-forecast{
   grid-area: b;
+  
+}
+.current-weather-wrapper{
+  grid-area: a;
+  width: 100%;
+display: flex; 
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.panel{
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #33c2ff8c;
+  border-radius: 15px;
+}
+.panel h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.panel * {
+  margin: 1rem;
+  text-align: center;
+
 }
 
 
-.current-weather-panel img {
-  height: 100px;
-  margin: 20px 0;
-}
+
 
 .forecast-wrapper {
   display: flex;
@@ -387,34 +442,8 @@ padding: 4vw;
     flex-direction: column;
     justify-content: unset;
   }
-  .day-one-pannel,
-  .day-two-pannel,
-  .day-three-pannel {
-    /* width: 20rem; */
-  }
 }
 
-.day-one-pannel,
-.day-two-pannel,
-.day-three-pannel {
-  text-align: center;
-  background-color: #b3e6ff;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 1vw;
-}
-
-.stats{
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#drink-count{
-    font-size: 6rem;
-    font-family: 'Permanent Marker', Verdana, Geneva, Tahoma, sans-serif;
-}
 
 footer{
     margin-top: 10vw;

@@ -28,25 +28,25 @@
     <header>
       <a title="Home" href="./index.html"><div class="logo"></div></a>
       <nav>
-        <!-- <a class="active" href="./index.html">Home</a> -->
         <a href="./about.html">About</a>
-        <!-- <a href="./fresh.html">Drinks</a> -->
       </nav>
       <a class="order-drink-button" href="./fresh.html">Order Drink</a>
     </header>
     <div class="hero">
       <div class="main-title">
         <h1>Bountiful Foods</h1>
-        <p>
-          Elevate your taste buds and nourish your body with our range of
-          irresistible smoothies
-        </p>
         <a class="order-drink-button" href="./fresh.html">Order Drink</a>
       </div>
     </div>
-    <div class="down-arrow"><a href="#drink-template-section">↓</a></div>
+    <div id="Continue" class="down-arrow"><a href="#Continue">↓</a></div>
 
     <main>
+      <div id="stats" class="stats">
+        <p>You've ordered</p>
+        <span id="drink-count"></span>
+        <p id="counter-desc"></p>
+        <p id="encourage-message"></p>
+      </div>
       <section id="drink-template-section" class="drink-templates">
         <h2 class="template-header">Our favorites</h2>
         <div class="drink-one">
@@ -74,9 +74,8 @@
         <div>
           <h2>Choose Your Own Adventure</h2>
           <p>
-            Create your own custom drink in a unique and personalized drinking
-            experience that perfectly captures your taste preferences and
-            elevates your overall enjoyment of every sip.
+            Create your own custom drink! Choose what you like and leave out
+            what you don't.
           </p>
           <a class="order-drink-button" href="./fresh.html"
             >Create Custom Drink</a
@@ -104,51 +103,17 @@
           </p>
         </div>
         <div class="weather-wrapper">
-          <h2>Weather in Carlsbad</h2>
+          <div class="current-weather-wrapper">
+            <h2>Weather in Carlsbad</h2>
+            <div id="current-weather-panel" class="panel"></div>
+          </div>
+          <h2 class="three-day-forecast">3 day forecast:</h2>
           <div class="forecast-wrapper">
-            <div class="day-one-pannel">
-              <h3 class="date" id="day-one-date"></h3>
-              <img
-                id="weather-icon1"
-                src="https://openweathermap.org/img/wn/03n@2x.png"
-                alt="placeholder icon"
-              />
-              <h3><span id="current-temp1"></span>℉</h3>
-              <div id="current-humidity1"></div>
-              <div id="condition-desc1"></div>
-            </div>
-            <div class="day-two-pannel">
-              <h3 class="date" id="day-two-date"></h3>
-              <img
-                id="weather-icon2"
-                src="https://openweathermap.org/img/wn/03n@2x.png"
-                alt="placeholder icon"
-              />
-              <h3><span id="current-temp2"></span>℉</h3>
-              <div id="current-humidity2"></div>
-              <div id="condition-desc2"></div>
-            </div>
-            <div class="day-three-pannel">
-              <h3 class="date" id="day-three-date"></h3>
-              <img
-                id="weather-icon3"
-                src="https://openweathermap.org/img/wn/03n@2x.png"
-                alt="placeholder icon"
-              />
-              <h3><span id="current-temp3"></span>℉</h3>
-              <div id="current-humidity3"></div>
-              <div id="condition-desc3"></div>
-            </div>
+            <div class="panel" id="day-one"></div>
+            <div class="panel" id="day-two"></div>
+            <div class="panel" id="day-three"></div>
           </div>
         </div>
-      </section>
-      <section class="stats">
-        <!-- <h2>Stats</h2>
-        <p>who doesnt love numbers?</p> -->
-        <p>You've ordered</p>
-        <span id="drink-count"></span>
-        <p id="counter-desc"></p>
-        <p id="encourage-message"></p>
       </section>
     </main>
     <footer>

@@ -7,7 +7,7 @@ orderCount = parseInt(orderCount);
 
 const counter = document.querySelector("#drink-count");
 const counterDesc = document.querySelector("#counter-desc");
-const counterIncrement = document.querySelector("#confirm-button");
+const counterIncrement = document.querySelector("#submit-button");
 const returnLink = document.querySelector("#return-home");
 
 if (counter) {
@@ -20,6 +20,8 @@ if (counter) {
   } else if (orderCount === 1) {
     counter.textContent = orderCount;
     counterDesc.textContent = "drink so far.";
+    encouragement.textContent =
+      "This is just the beginning. Order your second today!";
   } else if (!orderCount) {
     counter.textContent = "0";
     encouragement.textContent =
@@ -37,7 +39,4 @@ if (counterIncrement) {
 
 function incrementCounter() {
   localStorage.setItem("orderCount", orderCount + 1);
-  counterIncrement.disabled = true;
-  counterIncrement.textContent = "Order Confirmed";
-  returnLink.style.display = "block";
 }
